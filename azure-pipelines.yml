@@ -32,7 +32,7 @@ steps:
 - task: AzureRmWebAppDeployment@4
   inputs:
     ConnectionType: 'AzureRM'
-    azureSubscription: 'Visual Studio Enterprise(398203e5-596e-4058-95c9-f5ee030e54d4)'
+    azureSubscription: 'Azure-project'
     appType: 'webApp'
-    WebAppName: 'test-app7858'
+    WebAppName: 'webcalculator-app'
     packageForLinux: '$(build.artifactStagingDirectory)\WebApp.zip'
